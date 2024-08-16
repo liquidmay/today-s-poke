@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000926;
+}
+
+p {
+  color: #918840;
+  font-size: 55px;
+}
+
+button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.sprite-container {
+  position: relative;
+  background-color: #00633d;
+  border: 10px solid #5b9194;
+  box-shadow: 10 10 black;
+}
+
+#pokemon-sprite {
+  width: 600px; /* 이미지 크기 조절 */
+  height: auto;
+  margin: 0;
+  transition: filter 0.3s ease; /*필터 효과 전환에 애니메이션 추가*/
+}
+
+.shadow {
+  filter: grayscale(100%) brightness(0%) contrast(10000%);
+  /* 그림자만 보이게 하는 필터 */
+}
+
+#logo {
+  margin-left: 350px;
+  margin-top: 600px;
+}
+
+#pokeball-border {
+  border: 100px solid black;
+  width: 10px;
+  border-radius: 50%;
+}
+
+#pokeball-upside {
+  border: 80px solid red;
+  width: 10px;
+  border-radius: 50%;
+}
+
+#pokeball-downside {
+  border: 80px solid white;
+  width: 10px;
+  border-radius: 50%;
+}
+
+#pokeball-middle {
+  border-top: 50px solid white;
+  margin: 30px 0;
+}
