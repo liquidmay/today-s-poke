@@ -1,7 +1,14 @@
 let pokemonData = null; // json을 전역에서 사용할 수 있도록 선언
 
 async function getData() {
-  const url = "https://pokeapi.co/api/v2/pokemon/101"; // Ditto의 API URL
+  function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // 1부터 1000까지의 랜덤 숫자 생성
+  const randomNumber = getRandomNumber(1, 1000);
+
+  const url = `https://pokeapi.co/api/v2/pokemon/${randomNumber}`; // Ditto의 API URL
   try {
     const response = await fetch(url);
     if (!response.ok) {
